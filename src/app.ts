@@ -7,7 +7,7 @@ const app: Express = express();
 dotenv.config();
 
 if (!process.env.PORT) {
-    console.log("Env port not found Shutting down server ...");
+    console.log("Port not found Shutting down server ...");
     process.exit(1);
 }
 const PORT: number = parseInt(process.env.PORT as string, 10);
